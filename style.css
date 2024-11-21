@@ -4,7 +4,7 @@ padding: 0;
 }
 
 .content{
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 .image-budget {
@@ -100,8 +100,8 @@ color: #D1C000;
 }
 
 @media (max-width:768px) {
-    .row{
-        border: 1px solid red;
+    .table{
+       width: 100%;
     }
     .content{
         height: 1200px;
@@ -109,5 +109,24 @@ color: #D1C000;
     .table tfoot tr i{
         position: relative;
         left: 2rem;
+    }
+
+
+
+    .table-responsive {
+        overflow-x: auto; /* Permet le défilement horizontal */
+    }
+
+    .table {
+        width: 100%; /* Assure que la table prend toute la largeur disponible */
+    }
+
+    .tdAjouter span {
+        display: block; /* Empile les éléments dans des petits écrans */
+        text-align: center;
+    }
+
+    .table tfoot tr i {
+        position: static; /* Supprime le positionnement relatif */
     }
 }
