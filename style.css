@@ -79,7 +79,7 @@ color: #D1C000;
     font-weight: 400;
     padding-left: 2rem;
 }
-.table tbody tr td{
+.table tbody tr td tfoot{
     font-weight: 400;
     padding-left: 2rem;
 }
@@ -100,7 +100,14 @@ color: #D1C000;
 }
 
 @media (max-width:768px) {
+    .row{
+        border: 1px solid red;
+    }
     .content{
         height: 1200px;
+    }
+    .table tfoot tr i{
+        position: relative;
+        left: 2rem;
     }
 }
