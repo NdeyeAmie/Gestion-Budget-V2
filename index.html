@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="container">
+    <div class="bg-white shadow p-5 content">
+                <img src="image/Frame 2 1.png" class="img-fluid image-budget mx-auto d-block" alt="image">
+                <p class="text-center" style="font-family: Gothic A1;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #0C5E69;
+                margin-top: -2rem;">Gestion du budget</p>
+            
+        <div class="row gx-3 gy-2">
+            <div class="col-sm-4">
+                <div class="shadow p-2" style="background-color: #0C5E69;">
+                    <h4 class="text-center h4">Budget</h4>
+                </div>
+                <div class="shadow p-2" style="background-color: white;">
+                    <p class="text-center h4p" id="totalsRevenus">F CFA</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="shadow p-2" style="background-color: #0C5E69;">
+                    <h4 class="text-center h4">Dépenses</h4>
+                </div>
+                <div class="shadow p-2" style="background-color: white;">
+                    <p class="text-center h4p" id="totalsDepenses">F CFA</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="shadow p-2" style="background-color: #0C5E69;">
+                    <h4 class="text-center h4">Soldet</h4>
+                </div>
+                <div class="shadow p-2" style="background-color: white;">
+                    <p class="text-center h4p" id="afficheSold">F CFA</p>
+                </div>
+            </div>
+        </div>
+
+        <!------------------Liste des depenses---------------------- -->
+        <div class="row  gx-3 gy-2">
+            <div class="col-sm-12">
+                <div class=" mt-5 pt-3">
+                    <h2 class="textd mt-3">Liste des depenses</h2>
+                    <div class="table-responsive">
+                        <table id="table" class="table table-bordered">
+                            <thead>
+                                <tr class="border-2">
+                                    <th scope="col">TITRE</th>
+                                    <th scope="col">MONTANT</th>
+                                    <th scope="col">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyDepenses">
+                                <!--le contenu du tbody -->
+                                
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td class="d-flex  tdAjouter"><span>Ajouter Depenses</span>
+                                        <span id="btn_ajoutD"><i class="bi bi-plus-circle-fill"></i></span>
+                                       </td>
+                                </tr> 
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            </div>
+
+
+            <!-- -----------Liste des revenus-------------- -->
+            <div class="row  gx-3 gy-2">
+                <div class="col-sm-12">
+                    <div class=" mt-5 pt-3">
+                        <h2 class="textd mt-3">Liste des revenus</h2>
+                        <div class="table-responsive">
+                            <table id="table" class="table table-bordered">
+                                <thead>
+                                    <tr class="border-2">
+                                        <th scope="col">TITRE</th>
+                                        <th scope="col">MONTANT</th>
+                                        <th scope="col">ACTIONS</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbodyRevenus">
+                                    <!--le contenu du tbody -->
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td class="d-flex  tdAjouter"><span>Ajouter Revenus</span>
+                                            <span id="btn_ajoutR"><i class="bi bi-plus-circle-fill"></i></span>
+                                           </td>
+                                    </tr> 
+                                  </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

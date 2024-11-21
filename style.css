@@ -1,0 +1,106 @@
+*, html {
+margin: 0;
+padding: 0;
+}
+
+.content{
+    height: 1000px;
+}
+
+.image-budget {
+    /* width: 10%; */
+    object-fit: cover;
+    height: 100px;
+}
+.text{
+font-family: Gothic A1;
+font-size: 24px;
+font-weight: 400;
+line-height: 30px;
+
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #0C5E69;
+}
+.bouton {
+font-family: Gothic A1;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+color: white;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.text-ajout{
+ font-family: Gothic A1;
+font-size: 24px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #0C5E69;
+}
+.h4{
+font-family: Gothic A1;
+font-size: 19px;
+font-weight: 400;
+line-height: 30px;
+color: white;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.h4p{
+    font-family: Gothic A1;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.textd{
+    font-family: Gothic A1;
+font-size: 32px;
+font-weight: 400;
+line-height: 40px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #D1C000;
+}
+
+.table thead tr th{
+    background: #0C5E69; 
+    color: #E6E6E6;
+    font-weight: 400;
+    padding-left: 2rem;
+}
+.table tbody tr td{
+    font-weight: 400;
+    padding-left: 2rem;
+}
+.table tbody tr .add{
+    color: #D1C000;
+}
+.table tfoot tr i{
+    position: relative;
+    left: 19rem;
+}
+
+.tdAjouter span{
+    color: #D1C000;
+    font-weight: 600;
+}
+#btn_ajout{
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .content{
+        height: 1200px;
+    }
+}
